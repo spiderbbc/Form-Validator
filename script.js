@@ -93,6 +93,24 @@ function checkFieldsMatch(input1, input2){
 }
 
 /**
+ * check Fields Have Numbers.
+ *
+ * @param {HTMLElement} input element to raised.
+ * @return {void} 
+ */
+function checkFieldsHaveNumbers(input){
+    let isANumber = false;
+    Array.from(input.value).forEach(value => {
+        if(!isNaN(value)){
+            isANumber = true;
+        }
+    });
+    if (!isANumber) {
+        showError(input, 'Password must have at least one number');
+    }
+}
+
+/**
  * Get field name with firts letter to UpperCase.
  *
  * @param {HTMLElement} input element to raised.
@@ -113,4 +131,6 @@ form.addEventListener('submit', (e) => {
 
     checkEmail(email);
     checkFieldsMatch(password,password2);
+
+    checkFieldsHaveNumbers(password2);
 })
