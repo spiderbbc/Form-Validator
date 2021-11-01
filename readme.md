@@ -1,6 +1,6 @@
 # Form Validator
 
-<img src="https://i.ibb.co/XXmsZKr/validatorform.png" alt="validatorform" border="0">
+<img src="https://i.ibb.co/DGWFYsF/form-validator.gif" alt="form-validator" border="0">
 
 > Because it all starts with a form.
 
